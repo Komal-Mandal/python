@@ -1,11 +1,9 @@
 
-import sys
-import os
-
-# Add the src directory to Python path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-
+import pytest
 from src.main import hello_world
 
-def test_hello_world():
+def test_hello_world_return():
     assert hello_world() == "Hello, World!"
+
+def test_hello_world_type():
+    assert isinstance(hello_world(), str)
