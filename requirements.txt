@@ -1,0 +1,4 @@
+
+pytest==7.4.2        # for running tests
+pylint==3.0.0        # for code linting
+black==23.9.1        # for code formatting
